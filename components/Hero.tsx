@@ -2,6 +2,7 @@
 
 import { ChromaticImage } from "@/components/ui/chromatic-image";
 import { Button } from "@/components/ui/button";
+import TextReveal from "@/components/ui/line-text-reveal";
 
 export function Hero() {
     return (
@@ -18,16 +19,16 @@ export function Hero() {
             >
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/75 via-black/5 to-black/20" />
                 <div className="pointer-events-none absolute inset-0 z-10 flex flex-col justify-between gap-12 p-6 sm:p-8 lg:p-10">
-                    <div className="pointer-events-auto flex select-text items-start justify-between gap-6 font-mono text-sm tracking-wide">
-                        <p className={'font-extrabold'}>LWCI Music School</p>
-                        <p className="tabular-nums">Edition / 01</p>
-                    </div>
-                    <div className="pointer-events-auto flex select-text flex-col items-start gap-6">
+                    <div className="pointer-events-auto flex select-text flex-col items-start justify-end gap-6 h-full">
                         <div className="flex flex-col gap-3">
                             <p className="text-base/7 sm:text-lg">Learn more than music</p>
-                            <h3 className="max-w-[20ch] text-balance text-4xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-                                Cultivating Excellence in Music
-                            </h3>
+                            <TextReveal
+                                as="h3"
+                                mode="lines"
+                                blockColor="#9cae65"
+                                text="Cultivating Excellence in Music"
+                                className="mx-auto max-w-[20ch] text-3xl font-bold tracking-tight text-balance md:text-5xl lg:text-7xl"
+                            />
                             <p className="max-w-[62ch] text-pretty text-base/7 text-white/75 sm:text-base font-medium">
                                 Unlock your full potential through elite mentorship, immersive studio environments, and a refined curriculum designed for driven performers.
                             </p>

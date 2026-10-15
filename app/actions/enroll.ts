@@ -12,10 +12,10 @@ const toIntl = (p: string) => {
 
 // WhatsApp template params can't contain newlines or long runs of spaces
 const clean = (s: string) => s.replace(/\s+/g, " ").trim();
-
+const GRAPH_VERSION = "v25.0";
 async function sendTemplate(to: string, params: string[]) {
     const res = await fetch(
-        `https://graph.facebook.com/v21.0/${process.env.WA_PHONE_NUMBER_ID}/messages`,
+        `https://graph.facebook.com/${GRAPH_VERSION}/${process.env.WA_PHONE_NUMBER_ID}/messages`,
         {
             method: "POST",
             headers: {

@@ -6,6 +6,7 @@ import Features from "@/components/features";
 import ContactCta from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Faq from "@/components/FAQ";
+import Pricing from "@/components/pricing";
 
 const Page = () => {
     return (
@@ -14,6 +15,7 @@ const Page = () => {
             <About/>
             <Courses/>
             <Features/>
+            <Pricing/>
             <Faq/>
             <ContactCta/>
             <Footer/>

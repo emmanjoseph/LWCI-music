@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import { COURSES, FEE_PAYERS, enrollmentSchema, type EnrollmentValues } from "@/lib/enrollment";
 import { enroll } from "@/app/actions/enroll";
+import {Checkbox} from "@/components/ui/checkbox";
 
 function TextField({
                        control,
@@ -34,7 +35,7 @@ function TextField({
             control={control}
             render={({ field, fieldState }) => (
                 <Field data-invalid={fieldState.invalid}>
-                    <FieldLabel htmlFor={`enroll-${name}`}>{label}</FieldLabel>
+                    <FieldLabel className={'text-muted-foreground'} htmlFor={`enroll-${name}`}>{label}</FieldLabel>
                     <Input
                         aria-label={'name'}
                         {...inputProps}
@@ -42,6 +43,7 @@ function TextField({
                         value={field.value ?? ""}
                         id={`enroll-${name}`}
                         aria-invalid={fieldState.invalid}
+                        className={'rounded-xl'}
                     />
                     {description && <FieldDescription>{description}</FieldDescription>}
                     {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
@@ -180,6 +182,13 @@ export default function EnrollmentForm() {
                         {message.text}
                     </p>
                 )}
+
+                <Field orientation="horizontal">
+                    <Checkbox id="terms-checkbox-basic" name="terms-checkbox-basic" />
+                    <FieldLabel htmlFor="terms-checkbox-basic" className={'text-muted-foreground cursor-pointer'}>
+                        Confirmed that I have successfully reviewed and submitted the correct information.
+                    </FieldLabel>
+                </Field>
 
                 <Button type="submit" disabled={form.formState.isSubmitting} className="h-12">
                     {form.formState.isSubmitting ? "Sending…" : "Enroll"}

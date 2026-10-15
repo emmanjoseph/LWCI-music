@@ -56,10 +56,6 @@ const Page = () => {
                     />
                 </div>
 
-                <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
-                    Piano, guitar, vocals and drums for kids, teens and adults. Whether it's your first note or
-                    your next stage, there's a teacher and a lesson that fits you.
-                </p>
                 {/* overlay: dark tint plus a vignette so the text stays readable over busy photos */}
                 <div className="absolute inset-0 z-10 h-full w-full bg-black/55" />
                 <div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.7)_100%)]" />
@@ -71,8 +67,8 @@ const Page = () => {
             </div>
             <div className={'flex items-center justify-start'}>
                 <div className={'w-full max-w-lg mx-auto p-4 space-y-5'}>
-                    <h1 className={'text-xl font-bold'}>Enroll Now</h1>
-                    <p>Fill in the form to complete the application.</p>
+                    <h1 className={'text-base font-bold text-muted-foreground'}>Enroll Now</h1>
+                    <p className={'text-muted-foreground text-sm font-semibold'}>Fill in the form to complete the application.</p>
                     <EnrollmentForm/>
                 </div>
             </div>

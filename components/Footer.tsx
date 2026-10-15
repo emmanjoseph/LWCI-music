@@ -7,13 +7,13 @@ const quickLinks = [
     { title: "About", href: "/about" },
     { title: "Courses", href: "/courses" },
     { title: "Contact", href: "/contact" },
-    { title: "Jerusalem Family Ministry", href: "/contact" },
+    { title: "Privacy policy", href: "/privacy" },
+    { title: "Terms", href: "/terms" },
 ];
 
 const contactInfo = [
     { title: "Talk to Felix", href: "tel:+254700000000" },
     { title: "Talk to Marian", href: "tel:+254700000000" },
-    { title: "Talk to David", href: "tel:+254700000000" },
     { title: "Visit us", href: "https://goo.gl/maps/1234567890" },
 ];
 

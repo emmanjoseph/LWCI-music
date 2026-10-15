@@ -28,7 +28,7 @@ const questions = [
     },
     {
         question: "How do I find out about fees and lesson times?",
-        answer: "Get in touch with your preferred instrument and availability. We'll share the current fees and lesson options so you can choose what works for you.",
+        answer: "Registration costs KSh 500, and lessons are KSh 5,000 per month. Get in touch with your preferred instrument and availability to discuss lesson times.",
     },
 ];
 

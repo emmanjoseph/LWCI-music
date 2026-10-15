@@ -82,7 +82,7 @@ function FeatureColumn({ features }: { features: typeof leftFeatures }) {
 export default function Features() {
   return (
       <div className="container mx-auto px-4 pb-14">
-        <section className="overflow-hidden rounded-3xl bg-white text-neutral-950 outline-1 -outline-offset-1 outline-black/10 dark:bg-neutral-900 dark:text-neutral-50 dark:outline-white/10">
+        <section className="overflow-hidden rounded-4xl bg-white text-neutral-950 outline-1 -outline-offset-1 outline-black/10 dark:bg-neutral-900 dark:text-neutral-50 dark:outline-white/10">
           {/* Header */}
           <div className="flex flex-col gap-6 border-b border-black/10 p-6 dark:border-white/10 sm:p-8 lg:flex-row lg:items-end lg:justify-between">
             <div>
